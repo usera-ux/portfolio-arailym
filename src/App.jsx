@@ -13,14 +13,11 @@ import project6 from "./assets/project6.png";
 function App() {
   return (
     <div className="app">
-      {/* ---------- NAVBAR ---------- */}
       <nav className="navbar navbar-expand-lg navbar-dark bg-black fixed-top shadow">
         <div className="container-fluid">
           <a href="#home" className="navbar-brand fw-bold text-orange fs-4">
             Arailym
           </a>
-
-          {/* Burger button */}
           <button
             className="navbar-toggler border-0"
             type="button"
@@ -33,7 +30,7 @@ function App() {
             <span className="navbar-toggler-icon"></span>
           </button>
 
-          {/* Navbar links */}
+
           <div className="collapse navbar-collapse justify-content-end" id="navbarMenu">
             <ul className="navbar-nav mb-2 mb-lg-0 text-center">
               <li className="nav-item">
@@ -65,8 +62,6 @@ function App() {
           </div>
         </div>
       </nav>
-
-      {/* ---------- HERO ---------- */}
       <section id="home" className="hero-section d-flex align-items-center text-white">
         <div className="container text-center text-lg-start px-4">
           <p className="text-uppercase mb-2">Hello!</p>
@@ -79,14 +74,21 @@ function App() {
             I love turning design ideas into fully functional websites that not only look great but
             also deliver seamless user experiences.
           </p>
-          <button className="btn btn-orange mt-3">Let’s talk</button>
+         <a
+               href="https://wa.me/77476817180"
+               target="_blank"
+               rel="noopener noreferrer"
+                                          >
+  <button className="btn btn-orange mt-3">Let’s talk</button>
+</a>
+
         </div>
         <div className="hero-image-container">
           <img src={heroImage} alt="arailym" className="hero-image" />
         </div>
       </section>
 
-      {/* ---------- ABOUT ---------- */}
+    
       <section id="about" className="about-section text-white text-center">
         <div className="container">
           <h2 className="fw-bold mb-4">
@@ -101,11 +103,11 @@ function App() {
             functional web pages. My journey in programming started with curiosity — I wanted to
             understand how beautiful websites are made.
           </p>
-          <button className="btn btn-orange mt-3">Hire Me</button>
+          
         </div>
       </section>
 
-      {/* ---------- SKILLS ---------- */}
+
       <section id="skills" className="skills-section text-white text-center">
         <div className="container">
           <h2 className="fw-bold mb-4">
@@ -134,7 +136,7 @@ function App() {
         </div>
       </section>
 
-      {/* ---------- PORTFOLIO ---------- */}
+      
       <section id="portfolio" className="portfolio-section text-white text-center py-5">
         <div className="container">
           <h2 className="fw-bold mb-4">
@@ -158,7 +160,7 @@ function App() {
         </div>
       </section>
 
-      {/* ---------- CONTACT ---------- */}
+
       <section id="contact" className="contact-section text-white text-center py-5">
         <div className="container">
           <h2 className="fw-bold mb-4">
